@@ -4,7 +4,7 @@ aws_region = "us-east-2"
 lambda_functions = [
 {
   name      = "slackAlert1"
-  file      = "/Users/davidburkitt/git/repos/go/slackAlert/main.zip"
+  file      = "https://terraform-aws-go-slack-alert.s3.us-east-2.amazonaws.com/main.zip"
   handler   = "main"
   runtime   = "go1.x"
   variables = {"requires" = "override"} # override.tf replaces with valid tuple including Slack webhook to obfuscate from github (override.tf not commited)
