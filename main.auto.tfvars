@@ -7,7 +7,7 @@ lambda_functions = [
   file      = "/Users/davidburkitt/git/repos/go/slackAlert/main.zip"
   handler   = "main"
   runtime   = "go1.x"
-  variables = {"requires" = "override"} # override.tf replaces with valid tuple including Slack webhook to obfuscate from github (override.tf not commited)
+  variables = {"SLACK_WEBHOOK" = "https://hooks.slack.com/services/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"}
   topic = "arn:aws:sns:us-east-2:571562921621:LambdaDuration"
 },
 ]
