@@ -1,0 +1,9 @@
+# Override variables so webhook URL doesn't need to be published in github
+/*
+locals {
+  override_variables = [{"SLACK_WEBHOOK" = "https://hooks.slack.com/services/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"}]
+}
+resource "aws_lambda_function" "lambdaFunction" {
+  environment {variables = local.override_variables[count.index]}
+}
+*/
